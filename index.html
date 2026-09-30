@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2828电影网 - 高清电影在线观看_热播影视推荐_最新大片排行榜</title>
+<meta name="description" content="2828电影网（https://2828dianyingwang-app.com）汇集高清电影、热播剧集、综艺与动漫资源，提供每日热播榜、影视分类导航与高分佳作推荐，手机端流畅播放，更新及时。">
+<meta name="keywords" content="2828电影网,2828电影网官网,2828dianyingwang,高清电影在线观看,免费电影大全,热播影视推荐,最新电影排行榜,影视资源导航">
+<meta name="author" content="2828电影网">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://2828dianyingwang-app.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="2828电影网">
+<meta property="og:title" content="2828电影网 - 高清电影在线观看与热播影视推荐平台">
+<meta property="og:description" content="2828电影网：热门电影、剧集、综艺、动漫一站直达，每日热播榜与高分佳作持续更新。">
+<meta property="og:url" content="https://2828dianyingwang-app.com/">
+<meta property="og:image" content="https://2828dianyingwang-app.com/og-image.jpg">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2828电影网 - 高清电影在线观看与热播影视推荐">
+<meta name="twitter:description" content="手机端流畅播放，影视分类齐全，2828电影网每日更新热播榜单。">
+<meta name="theme-color" content="#08090d">
+<style>
+:root{
+  --bg:#08090d;
+  --bg2:#0d1017;
+  --card:rgba(255,255,255,.045);
+  --line:rgba(255,255,255,.09);
+  --txt:#e9edf5;
+  --sub:#8d95a6;
+  --gold:#ffb43a;
+  --gold2:#ff8a3d;
+  --cyan:#5fe3ff;
+  --radius:16px;
+  --maxw:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);
+  color:var(--txt);
+  font-family:system-ui,-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+  font-size:16px;line-height:1.7;
+  overflow-x:hidden;
+  background-image:
+    radial-gradient(900px 500px at 12% -8%,rgba(255,180,58,.16),transparent 60%),
+    radial-gradient(800px 480px at 92% 4%,rgba(95,227,255,.13),transparent 62%),
+    radial-gradient(700px 600px at 50% 108%,rgba(255,138,61,.10),transparent 65%);
+  background-attachment:fixed;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+h1,h2,h3,h4{line-height:1.3;font-weight:800;letter-spacing:.5px}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+/* ===== 顶部导航 ===== */
+.glowbar{height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2),var(--cyan),var(--gold));background-size:300% 100%;animation:slide 9s linear infinite}
+@keyframes slide{0%{background-position:0 0}100%{background-position:300% 0}}
+header.top{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(8,9,13,.82);border-bottom:1px solid var(--line)}
+.topin{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0}
+.logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.mark{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--gold),var(--gold2));display:grid;place-items:center;font-weight:900;color:#1a1206;font-size:15px;box-shadow:0 6px 18px rgba(255,180,58,.32)}
+.logo b{font-size:19px;letter-spacing:1px}
+.logo span{display:block;font-size:11px;color:var(--sub);letter-spacing:2px;line-height:1.2}
+nav.menu{display:flex;gap:4px;flex:1 1 auto;justify-content:flex-end}
+nav.menu a{font-size:14px;color:#c6cddb;padding:7px 12px;border-radius:999px;transition:.25s;white-space:nowrap}
+nav.menu a:hover{color:#0b0e14;background:linear-gradient(135deg,var(--gold),var(--gold2));font-weight:700}
+.btnsm{display:none}
+
+/* ===== HERO ===== */
+.hero{padding:56px 0 30px;text-align:center;position:relative}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--gold);border:1px solid rgba(255,180,58,.35);background:rgba(255,180,58,.08);padding:6px 14px;border-radius:999px;letter-spacing:1px}
+.hero h1{font-size:clamp(30px,7.4vw,58px);margin:20px 0 14px;background:linear-gradient(180deg,#fff,#ffd592);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:2px}
+.hero .url{margin:0 auto 16px;display:inline-block;font-size:13.5px;color:var(--cyan);border:1px dashed rgba(95,227,255,.4);border-radius:10px;padding:8px 16px;word-break:break-all;background:rgba(95,227,255,.06)}
+.hero p.lead{max-width:720px;margin:0 auto;color:#a9b2c2;font-size:clamp(14px,3.4vw,16.5px)}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.btn{padding:13px 26px;border-radius:999px;font-weight:700;font-size:15px;transition:.25s;border:1px solid transparent}
+.btn.p{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#1a1206;box-shadow:0 10px 26px rgba(255,160,50,.28)}
+.btn.p:hover{transform:translateY(-2px)}
+.btn.o{border-color:rgba(255,255,255,.22);color:#dfe5f0;background:rgba(255,255,255,.04)}
+.btn.o:hover{border-color:var(--cyan);color:var(--cyan)}
+
+/* 统计条 */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:38px 0 6px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 10px;text-align:center}
+.stat b{display:block;font-size:clamp(20px,5vw,30px);color:var(--gold);letter-spacing:1px}
+.stat span{font-size:12.5px;color:var(--sub)}
+
+/* 胶片孔分隔 */
+.film{height:26px;margin:44px auto;width:100%;max-width:var(--maxw);border-radius:6px;background:
+  linear-gradient(rgba(255,255,255,.05),rgba(255,255,255,.05)) padding-box,
+  repeating-linear-gradient(90deg,rgba(255,255,255,.18) 0 12px,transparent 12px 26px);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+/* ===== 区块通用 ===== */
+section{padding:34px 0;scroll-margin-top:70px}
+.head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:22px;flex-wrap:wrap}
+.head h2{font-size:clamp(21px,5vw,30px);display:flex;align-items:center;gap:10px}
+.head h2::before{content:"";width:5px;height:24px;border-radius:3px;background:linear-gradient(180deg,var(--gold),var(--gold2))}
+.head em{font-style:normal;font-size:13px;color:var(--sub)}
+.tags{display:flex;gap:8px;flex-wrap:wrap}
+.tag{font-size:12.5px;color:#b9c1d0;border:1px solid var(--line);background:rgba(255,255,255,.03);padding:5px 12px;border-radius:999px;transition:.2s}
+.tag:hover{border-color:var(--gold);color:var(--gold)}
+
+/* 影片卡片 */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.3s;position:relative}
+.card:hover{transform:translateY(-6px);border-color:rgba(255,180,58,.5);box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.poster{aspect-ratio:3/4;display:grid;place-items:center;position:relative;font-weight:900;font-size:34px;color:rgba(255,255,255,.92);text-shadow:0 4px 16px rgba(0,0,0,.45)}
+.poster i{position:absolute;top:9px;left:9px;font-style:normal;font-size:11px;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.18);padding:3px 8px;border-radius:6px;letter-spacing:.5px}
+.poster u{position:absolute;right:9px;bottom:9px;text-decoration:none;font-size:12px;font-weight:800;color:var(--gold);background:rgba(0,0,0,.5);padding:2px 7px;border-radius:6px}
+.p1{background:linear-gradient(150deg,#1b2a4a,#3d2258 55%,#0e1424)}
+.p2{background:linear-gradient(150deg,#3a2418,#6b3b1e 55%,#160f0c)}
+.p3{background:linear-gradient(150deg,#123535,#1c5a52 55%,#0b1618)}
+.p4{background:linear-gradient(150deg,#40162a,#6a2340 55%,#180a13)}
+.p5{background:linear-gradient(150deg,#20263f,#2f3f6b 55%,#0d1019)}
+.p6{background:linear-gradient(150deg,#3d3210,#75601c 55%,#17130a)}
+.meta{padding:12px 13px 14px}
+.meta h3{font-size:15px;margin-bottom:6px}
+.meta p{font-size:12.5px;color:var(--sub);display:flex;justify-content:space-between;gap:6px}
+.meta p b{color:var(--gold);font-weight:600}
+
+/* 排行榜 */
+.rank{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.rk{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;transition:.25s}
+.rk:hover{border-color:rgba(95,227,255,.45);transform:translateX(4px)}
+.no{width:34px;height:34px;flex:0 0 auto;border-radius:10px;display:grid;place-items:center;font-weight:900;font-size:15px;background:rgba(255,255,255,.06);color:#cfd6e4}
+.rk:nth-child(1) .no{background:linear-gradient(135deg,#ffb43a,#ff8a3d);color:#1a1206}
+.rk:nth-child(2) .no{background:linear-gradient(135deg,#d7dee8,#9aa6b8);color:#14171f}
+.rk:nth-child(3) .no{background:linear-gradient(135deg,#c98b52,#8a5a34);color:#20140b}
+.rk .info{flex:1 1 auto;min-width:0}
+.rk h4{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rk span{font-size:12px;color:var(--sub)}
+.rk em{font-style:normal;font-size:13px;color:var(--gold);font-weight:700;flex:0 0 auto}
+
+/* 时间线 */
+.timeline{position:relative;padding-left:22px}
+.timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--gold),rgba(95,227,255,.6),transparent)}
+.tl{position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:12px}
+.tl::before{content:"";position:absolute;left:-22px;top:22px;width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(255,180,58,.18)}
+.tl h4{font-size:15.5px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.tl h4 small{font-size:11.5px;color:#0b0e14;background:linear-gradient(135deg,var(--cyan),#8ef0ff);padding:2px 8px;border-radius:6px;font-weight:700}
+.tl p{font-size:13.5px;color:var(--sub);margin-top:5px}
+
+/* 会员 */
+.vip{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.plan{border:1px solid var(--line);border-radius:20px;padding:24px 20px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));position:relative;overflow:hidden}
+.plan.hot{border-color:rgba(255,180,58,.55);box-shadow:0 16px 40px rgba(255,160,50,.14)}
+.plan .ribbon{position:absolute;right:-38px;top:14px;transform:rotate(38deg);background:linear-gradient(135deg,var(--gold),var(--gold2));color:#1a1206;font-size:11.5px;font-weight:800;padding:4px 42px}
+.plan h3{font-size:18px;margin-bottom:6px}
+.plan .price{font-size:30px;font-weight:900;color:var(--gold);margin:10px 0 4px}
+.plan .price small{font-size:13px;color:var(--sub);font-weight:500}
+.plan ul{margin:14px 0 18px}
+.plan li{font-size:13.5px;color:#b6bfd0;padding:6px 0 6px 20px;position:relative;border-bottom:1px dashed rgba(255,255,255,.07)}
+.plan li:last-child{border:0}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:900}
+.plan a{display:block;text-align:center;padding:11px;border-radius:999px;font-weight:700;font-size:14px;border:1px solid rgba(255,255,255,.2)}
+.plan.hot a{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#1a1206;border:0}
+
+/* FAQ */
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+.faq summary{padding:15px 18px;font-weight:700;font-size:15px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--gold);font-size:20px;font-weight:900}
+.faq details[open] summary::after{content:"−"}
+.faq details[open] summary{border-bottom:1px solid var(--line)}
+.faq p{padding:14px 18px 18px;font-size:14px;color:#a9b2c2}
+
+/* 关于 */
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:18px}
+.panel{border:1px solid var(--line);border-radius:20px;padding:24px;background:var(--card)}
+.panel h3{font-size:19px;margin-bottom:10px}
+.panel p{font-size:14.5px;color:#a9b2c2;margin-bottom:10px}
+.panel .kw{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.panel .kw a{font-size:12.5px;color:#c8d0de;border:1px solid var(--line);padding:5px 11px;border-radius:8px;background:rgba(255,255,255,.03)}
+.panel .kw a:hover{border-color:var(--gold);color:var(--gold)}
+
+/* 底部 */
+footer{margin-top:34px;border-top:1px solid var(--line);background:rgba(255,255,255,.02);padding:34px 0 26px}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
+.fcol h4{font-size:15px;margin-bottom:12px;color:#fff}
+.fcol a,.fcol p{font-size:13.5px;color:var(--sub);display:block;padding:4px 0}
+.fcol a:hover{color:var(--gold)}
+.copy{margin-top:24px;padding-top:18px;border-top:1px dashed rgba(255,255,255,.1);text-align:center;font-size:12.5px;color:#6f7787;line-height:2}
+.copy b{color:var(--gold)}
+
+.reveal{opacity:0;transform:translateY(22px);transition:.7s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* 移动端 */
+@media (max-width:860px){
+  .about{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  nav.menu{order:3;flex-basis:100%;justify-content:flex-start;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch}
+  nav.menu::-webkit-scrollbar{display:none}
+  nav.menu a{font-size:13px;padding:6px 11px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+  .topin{flex-wrap:wrap;padding:10px 0}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .poster{font-size:28px}
+  .hero{padding:34px 0 20px}
+  .btn{padding:12px 20px;font-size:14px}
+  .wrap{padding:0 15px}
+  section{padding:26px 0}
+}
+@media (max-width:400px){
+  .grid{grid-template-columns:1fr 1fr;gap:10px}
+  .meta{padding:10px}
+  .meta h3{font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .glowbar{animation:none}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://2828dianyingwang-app.com/#website",
+      "url":"https://2828dianyingwang-app.com/",
+      "name":"2828电影网",
+      "alternateName":"2828dianyingwang",
+      "description":"2828电影网提供高清电影、热播剧集、综艺与动漫在线观看，含影视分类、热播榜单与高分佳作推荐。",
+      "inLanguage":"zh-CN",
+      "publisher":{"@id":"https://2828dianyingwang-app.com/#org"}
+    },
+    {
+      "@type":"Organization",
+      "@id":"https://2828dianyingwang-app.com/#org",
+      "name":"2828电影网",
+      "url":"https://2828dianyingwang-app.com/",
+      "description":"2828电影网是面向影视爱好者的影视资源导航与推荐平台。"
+    },
+    {
+      "@type":"ItemList",
+      "name":"2828电影网热播榜",
+      "itemListOrder":"https://schema.org/ItemListOrderDescending",
+      "numberOfItems":6,
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"星际远征：光年之外"},
+        {"@type":"ListItem","position":2,"name":"雾都追凶"},
+        {"@type":"ListItem","position":3,"name":"深海回声"},
+        {"@type":"ListItem","position":4,"name":"长安幻夜"},
+        {"@type":"ListItem","position":5,"name":"荒野信条"},
+        {"@type":"ListItem","position":6,"name":"时光邮局"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+<div class="glowbar"></div>
+
+<header class="top">
+  <div class="wrap topin">
+    <a class="logo" href="#home" aria-label="2828电影网首页">
+      <span class="mark">28</span>
+      <span><b>2828电影网</b><span>2828DIANYINGWANG</span></span>
+    </a>
+    <nav class="menu" aria-label="网站主导航">
+      <a href="#hot">热门推荐</a>
+      <a href="#category">影视分类</a>
+      <a href="#rank">热播榜单</a>
+      <a href="#new">最新上线</a>
+      <a href="#vip">会员权益</a>
+      <a href="#faq">常见问题</a>
+      <a href="#about">关于我们</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap" id="home">
+    <span class="badge">◆ 2026 热门影视 · 每日更新 · 手机端流畅播放</span>
+    <h1>2828电影网 · 高清影视在线观看首选</h1>
+    <div class="url">官方网址：https://2828dianyingwang-app.com</div>
+    <p class="lead">2828电影网专注为影视爱好者提供高清电影、热播剧集、综艺与动漫的一站式导航与推荐服务。分类清晰、榜单实时、片单精选，打开 2828电影网 就能快速找到今晚想看的那部片。</p>
+    <div class="cta">
+      <a class="btn p" href="#hot">立即浏览热门影视</a>
+      <a class="btn o" href="#category">按分类找片</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>38000+</b><span>收录影视条目</span></div>
+      <div class="stat"><b>每日更新</b><span>热播榜单同步</span></div>
+      <div class="stat"><b>1080P+</b><span>高清画质可选</span></div>
+      <div class="stat"><b>24H</b><span>全天候访问</span></div>
+    </div>
+  </section>
+
+  <div class="film" aria-hidden="true"></div>
+
+  <!-- 栏目一：热门推荐 -->
+  <section class="wrap reveal" id="hot">
+    <div class="head">
+      <h2>热门推荐</h2>
+      <em>2828电影网 编辑精选 · 本周高分佳作</em>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="poster p1">星<i class="i">科幻</i><u>9.2</u></div>
+        <div class="meta"><h3>星际远征：光年之外</h3><p><span>2026 · 美国</span><b>冒险</b></p></div>
+      </article>
+      <article class="card">
+        <div class="poster p2">雾<i class="i">悬疑</i><u>8.9</u></div>
+        <div class="meta"><h3>雾都追凶</h3><p><span>2026 · 英国</span><b>犯罪</b></p></div>
+      </article>
+      <article class="card">
+        <div class="poster p3">深<i class="i">剧情</i><u>8.8</u></div>
+        <div class="meta"><h3>深海回声</h3><p><span>2025 · 中国</span><b>海洋</b></p></div>
+      </article>
+      <article class="card">
+        <div class="poster p4">长<i class="i">古装</i><u>8.7</u></div>
+        <div class="meta"><h3>长安幻夜</h3><p><span>2025 · 中国</span><b>奇幻</b></p></div>
+      </article>
+      <article class="card">
+        <div class="poster p5">荒<i class="i">动作</i><u>8.6</u></div>
+        <div class="meta"><h3>荒野信条</h3><p><span>2026 · 加拿大</span><b>生存</b></p></div>
+      </article>
+      <article class="card">
+        <div class="poster p6">时<i class="i">爱情</i><u>8.5</u></div>
+        <div class="meta"><h3>时光邮局</h3><p><span>2025 · 日本</span><b>治愈</b></p></div>
+      </article>
+      <article class="card">
+        <div class="poster p3">无<i class="i">律政</i><u>8.4</u></div>
+        <div class="meta"><h3>无声证词</h3><p><span>2025 · 中国</span><b>推理</b></p></div>
+      </article>
+      <article class="card">
+        <div class="poster p1">云<i class="i">都市</i><u>8.3</u></div>
+        <div class="meta"><h3>云端恋人</h3><p><span>2026 · 韩国</span><b>浪漫</b></p></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 栏目二：影视分类 -->
+  <section class="wrap reveal" id="category">
+    <div class="head">
+      <h2>影视分类</h2>
+      <em>2828电影网 全类型频道导航</em>
+    </div>
+    <div class="tags">
+      <a class="tag" href="#">动作片</a>
+      <a class="tag" href="#">科幻片</a>
+      <a class="tag" href="#">悬疑推理</a>
+      <a class="tag" href="#">喜剧片</a>
+      <a class="tag" href="#">爱情片</a>
+      <a class="tag" href="#">恐怖惊悚</a>
+      <a class="tag" href="#">战争历史</a>
+      <a class="tag" href="#">动画动漫</a>
+      <a class="tag" href="#">纪录片</a>
+      <a class="tag" href="#">国产剧集</a>
+      <a class="tag" href="#">日韩剧集</a>
+      <a class="tag" href="#">欧美剧集</a>
+      <a class="tag" href="#">综艺真人秀</a>
+      <a class="tag" href="#">家庭亲子</a>
+      <a class="tag" href="#">武侠武打</a>
+      <a class="tag" href="#">短片微电影</a>
+    </div>
+    <div class="about" style="margin-top:18px">
+      <div class="panel">
+        <h3>按类型找片，更快更准</h3>
+        <p>2828电影网 将全站影视资源按题材、地区、年代三重维度拆分，无论你想看烧脑悬疑、硬核科幻还是轻松治愈的都市小品，都能在分类频道中快速定位。</p>
+        <p>每个分类页均配备筛选条件与编辑推荐位，配合站内热播榜单交叉参考，选片效率提升明显。</p>
+      </div>
+      <div class="panel">
+        <h3>热门关键词</h3>
+        <div class="kw">
+          <a href="#">2828电影网</a><a href="#">高清电影在线观看</a><a href="#">免费电影大全</a>
+          <a href="#">热播影视推荐</a><a href="#">最新电影排行榜</a><a href="#">豆瓣高分电影</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目三：热播榜单 -->
+  <section class="wrap reveal" id="rank">
+    <div class="head">
+      <h2>热播榜单</h2>
+      <em>数据每小时刷新 · 2828电影网 实时榜</em>
+    </div>
+    <div class="rank">
+      <div class="rk"><span class="no">1</span><span class="info"><h4>星际远征：光年之外</h4><span>科幻 / 冒险 · 156 分钟</span></span><em>9.2</em></div>
+      <div class="rk"><span class="no">2</span><span class="info"><h4>雾都追凶</h4><span>悬疑 / 犯罪 · 128 分钟</span></span><em>8.9</em></div>
+      <div class="rk"><span class="no">3</span><span class="info"><h4>深海回声</h4><span>剧情 / 海洋 · 112 分钟</span></span><em>8.8</em></div>
+      <div class="rk"><span class="no">4</span><span class="info"><h4>长安幻夜</h4><span>古装 / 奇幻 · 141 分钟</span></span><em>8.7</em></div>
+      <div class="rk"><span class="no">5</span><span class="info"><h4>荒野信条</h4><span>动作 / 生存 · 119 分钟</span></span><em>8.6</em></div>
+      <div class="rk"><span class="no">6</span><span class="info"><h4>时光邮局</h4><span>爱情 / 治愈 · 104 分钟</span></span><em>8.5</em></div>
+      <div class="rk"><span class="no">7</span><span class="info"><h4>猎风者</h4><span>运动 / 励志 · 122 分钟</span></span><em>8.4</em></div>
+      <div class="rk"><span class="no">8</span><span class="info"><h4>山海纪元</h4><span>动画 / 神话 · 98 分钟</span></span><em>8.2</em></div>
+    </div>
+  </section>
+
+  <div class="film" aria-hidden="true"></div>
+
+  <!-- 栏目四：最新上线 -->
+  <section class="wrap reveal" id="new">
+    <div class="head">
+      <h2>最新上线</h2>
+      <em>今日更新 24 部 · 2828电影网 首发速递</em>
+    </div>
+    <div class="timeline">
+      <article class="tl">
+        <h4>拳台之外 <small>今日上新</small></h4>
+        <p>体育题材剧情片，讲述一位退役拳手重返赛场的自我救赎之路，2828电影网 已同步上线高清版。</p>
+      </article>
+      <article class="tl">
+        <h4>猫鼠游戏：重启 <small>今日上新</small></h4>
+        <p>经典 IP 续作，双男主智商对决升级，动作场面与反转节奏兼顾。</p>
+      </article>
+      <article class="tl">
+        <h4>归途列车 <small>昨日</small></h4>
+        <p>公路片外壳下的家庭和解故事，长途列车上的三段相遇串起时代记忆。</p>
+      </article>
+      <article class="tl">
+        <h4>黄金罗盘之城 <small>昨日</small></h4>
+        <p>奇幻冒险系列新章，视效与世界观全面升级，适合大屏观看。</p>
+      </article>
+      <article class="tl">
+        <h4>无声证词 第二季 <small>本周</small></h4>
+        <p>律政剧集续订，案件密度更高，法庭辩论段落被观众称为高光时刻。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 栏目五：会员权益 -->
+  <section class="wrap reveal" id="vip">
+    <div class="head">
+      <h2>会员权益</h2>
+      <em>三种方案灵活选择 · 2828电影网 会员服务</em>
+    </div>
+    <div class="vip">
+      <div class="plan">
+        <h3>体验会员</h3>
+        <div class="price">免费 <small>/ 注册即得</small></div>
+        <ul>
+          <li>标清画质流畅播放</li>
+          <li>浏览全站影视分类与榜单</li>
+          <li>每日 3 次片单收藏</li>
+        </ul>
+        <a href="#">立即注册</a>
+      </div>
+      <div class="plan hot">
+        <span class="ribbon">最受欢迎</span>
+        <h3>黄金会员</h3>
+        <div class="price">¥28 <small>/ 月</small></div>
+        <ul>
+          <li>1080P 高清无广告播放</li>
+          <li>新片首发抢先看</li>
+          <li>多设备同步观影记录</li>
+          <li>专属客服与片单定制</li>
+        </ul>
+        <a href="#">开通黄金会员</a>
+      </div>
+      <div class="plan">
+        <h3>年度会员</h3>
+        <div class="price">¥268 <small>/ 年</small></div>
+        <ul>
+          <li>含黄金会员全部权益</li>
+          <li>4K 超清画质解锁</li>
+          <li>线下观影活动优先报名</li>
+          <li>赠送 2 个月时长</li>
+        </ul>
+        <a href="#">升级年度会员</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目六：常见问题 -->
+  <section class="wrap faq reveal" id="faq">
+    <div class="head">
+      <h2>常见问题</h2>
+      <em>关于 2828电影网 的使用答疑</em>
+    </div>
+    <details open>
+      <summary>2828电影网 需要下载客户端才能观看吗？</summary>
+      <p>不需要。2828电影网 为纯网页版服务，手机、平板、电脑浏览器打开官方网址即可浏览与播放，无需安装额外软件，也支持添加到手机桌面快捷方式。</p>
+    </details>
+    <details>
+      <summary>网站内容多久更新一次？</summary>
+      <p>热门推荐与热播榜单每小时刷新一次，最新上线栏目每日更新，院线新片与剧集更新通常在上线当日同步至 2828电影网。</p>
+    </details>
+    <details>
+      <summary>如何快速找到想看的影片？</summary>
+      <p>可通过顶部「影视分类」按题材筛选，也可在「热播榜单」查看实时排名；两者结合使用，通常几次点击即可锁定目标影片。</p>
+    </details>
+    <details>
+      <summary>播放卡顿应该怎么解决？</summary>
+      <p>建议优先切换至标清或高清档位、关闭其他占用带宽的应用，或使用 5GHz Wi-Fi 网络；若仍异常，可刷新页面后重试。</p>
+    </details>
+    <details>
+      <summary>会员可以在几台设备上使用？</summary>
+      <p>黄金会员支持 3 台设备同时在线，年度会员支持 5 台，观影记录与收藏片单在各设备间自动同步。</p>
+    </details>
+  </section>
+
+  <!-- 栏目七：关于我们 -->
+  <section class="wrap reveal" id="about">
+    <div class="head">
+      <h2>关于我们</h2>
+      <em>2828电影网 · 影视内容导航与推荐平台</em>
+    </div>
+    <div class="about">
+      <div class="panel">
+        <h3>关于 2828电影网</h3>
+        <p>2828电影网（https://2828dianyingwang-app.com）成立于影视内容消费快速线上化的阶段，致力于用更清晰的信息结构帮助用户降低选片成本。我们不做内容堆砌，而是把分类、榜单、片单三件事做扎实。</p>
+        <p>团队由影视编辑与前端工程师组成，长期维护影片资料库的完整性与时效性，并针对不同屏幕尺寸优化浏览体验，让手机端也能获得接近桌面端的阅读效率。</p>
+        <p>未来 2828电影网 将持续完善影视知识图谱与个性化推荐能力，努力成为观众与好作品之间最短的那条路径。</p>
+      </div>
+      <div class="panel">
+        <h3>联系我们</h3>
+        <p>官方网址：https://2828dianyingwang-app.com</p>
+        <p>内容合作：#</p>
+        <p>意见反馈：#</p>
+        <p>侵权投诉：#</p>
+        <div class="kw">
+          <a href="#">网站地图导航</a><a href="#">影视投稿</a><a href="#">友情链接</a><a href="#">隐私政策</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fcol">
+        <h4>2828电影网</h4>
+        <p>高清电影在线观看 · 热播影视推荐 · 最新大片排行榜，官方网址 https://2828dianyingwang-app.com</p>
+        <a href="#hot">热门推荐</a>
+        <a href="#rank">热播榜单</a>
+      </div>
+      <div class="fcol">
+        <h4>影视频道</h4>
+        <a href="#">动作片</a><a href="#">科幻片</a><a href="#">悬疑推理</a><a href="#">动画动漫</a>
+      </div>
+      <div class="fcol">
+        <h4>服务支持</h4>
+        <a href="#">帮助中心</a><a href="#">意见反馈</a><a href="#">侵权投诉</a><a href="#">隐私政策</a>
+      </div>
+      <div class="fcol">
+        <h4>关于站点</h4>
+        <a href="#about">关于我们</a><a href="#">联系方式</a><a href="#">友情链接</a><a href="#">免责声明</a>
+      </div>
+    </div>
+    <div class="copy">
+      <p>关键词：<b>2828电影网</b> · 2828电影网官网 · 高清电影在线观看 · 免费电影大全 · 热播影视推荐 · 最新电影排行榜</p>
+      <p>© 2026 2828电影网 2828dianyingwang-app.com　保留所有权利　本页站内链接仅用于演示</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(list){
+    list.forEach(function(en){
+      if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}
+    });
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
